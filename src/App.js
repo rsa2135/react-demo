@@ -4,10 +4,10 @@ import './App.css';
 
 const Coin = (props) => {
   return (
-    <div style={{margin: '1em'}} className = 'coin-info'>
-      <img width='75' src={props.avatarUrl} />
+    <div className = 'coin-info'>
+      <img src={props.avatarUrl} />
       <div className="info">
-        <div style={{fontSize: '1.25em', fontWeight: 'bold'}}>
+        <div className='symbol'>
           {props.symbol}
         </div>
         <div>{props.coinName}</div>

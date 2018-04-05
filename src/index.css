@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+  margin: 15px;
   padding: 0;
   font-family: sans-serif;
+  background: rgb(37, 42, 45);
 }
