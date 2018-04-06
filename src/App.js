@@ -38,6 +38,10 @@ class Form extends Component {
     Promise.all(urls.map(url => 
       fetch(url).then(response => response.json())
     )).then(data => {
+        if (data[0].Data[this.state.symbol] === undefined) {
+          window.alert('Wrong symbol!')
+          return
+        }
         const coinData = data[0].Data[this.state.symbol];
         return { 
           symbol: coinData.Symbol,
